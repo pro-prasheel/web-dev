@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TABLE PAGE</title>
+		 <link rel="stylesheet" type="text/css" href="something.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+<style>
+.tab
+{
+	align: center;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 2.0em;
+	width: 200px;
+	height: 50px;
+	border-radius: 80px;
+	line-height:50px;
+	text-align: center;
+	border: 3px solid black;
+	display: block;
+	text-decoration: none;
+	margin: 2px ;
+	color: black;
+	position: relative;
+	overflow: hidden;
+	background: #75d159;
+	transition: .3s; 
+}
+</style>
+    </head>
+   <body background="black-and-white-gray-grey-1050305.jpg  Asw" style="font-size: 20px;font-family: 'Lato', sans-serif;">           
+		
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h1 class="tab" >TABLES</h1>
+		
+		<hr size="10" color="black">
+		
+		
+		<div >
+			<h2><u>INTRODUCTION</u></h2>
+			<br>
+			<p> A webpage can be made more informative and understandable using tables.</p>
+			<p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+		</div>
+		<hr>
+		<div >
+			<h2><u>TABLES FORMATION</u></h2>
+		<p>Table heading can be defined using &lt th &gt tag. This tag will be put to replace &lt td &gt tag, which is used to represent actual data cell.
+ Normally you will put your top row as table heading as shown below, otherwise you can use &lt th &gt element in any row. Headings, which are defined in &lt th &gt tag are centered and bold by default.</p>
+			<fieldset>
+			<legend>Example</legend> <br>
+			<div >
+                  &lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="blue"> HTML Tables</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1"&gt<br>
+				 &lttr&gt<br>
+				   &lttd&gt<font color="blue">Row 1, Column 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1, Column 2</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Row 2, Column 1</font>
+            &lt/td&gt<br>
+            &lttd&g<font color="blue">tRow 2, Column 2</font>&gt/td&lt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+			</p>
+			</fieldset>
+			</div>	
+			
+			<fieldset>
+			<legend>Output</legend><br>
+			<div >
+				<p>
+					<h2>This will produce the following result</h2><br>
+					<html>
+
+   <head>
+      <title>HTML Tables</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+      
+   </body>
+</html>
+				</p>
+			</div>
+			</fieldset>
+		</div>
+		<hr>
+		<div >
+			<h2><u>USE THE FOLLOWING</u></h2>
+			<ul>
+          <li>Use the HTML &lt table &gt element to define a table</li>
+          <li>Use the HTML &lt tr &gt element to define a table row</li>
+          <li>Use the HTML &lt td &gt element to define a table data</li>
+          <li>Use the HTML &lt th &gt element to define a table heading</li>
+          <li>Use the HTML &lt caption &gt element to define a table caption</li>
+            <li>Use the colspan attribute to make a cell span many columns</li>
+            <li>Use the rowspan attribute to make a cell span many rows</li>
+            <li>Use the id attribute to uniquely define one table</li>  
+            <br>
+            <h2></h2>
+            <table border="1">
+				<tr bgcolor="gray">
+					<th >SL. NO.</th>
+					<th>Some special properties</th>
+                    <th>Code</th>
+				</tr>
+				
+				<tr>
+					<td>1</td>
+					<td><b>Adding border to a table</b><br>
+						<p>To add border to a table we have to use css</p></td>
+<td>table, th, td <br>
+{
+    border: 1px solid black;
+}</td>
+</tr>
+				
+				<tr>
+					<td>2</td>
+					<td><b>Border-Collapse</b><br>
+					<p>If you want the border to collapse into one solid border this property is used </p>
+                    </td>
+                <td>table, th, td <br>{
+    border: 1px solid black;<br>
+    border-collapse: collapse;
+}
+                </tr>
+				
+				<tr>
+					<td>3</td>
+					<td><b>Padding</b><br>
+	              <p>This property is used to specify the space between cell content cell border</p>
+					</td>
+                    <td>th, td <br>
+                    {
+    padding: 15px;
+}
+                    </td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td><b>Text-align </b><br>
+					<p> This property is used to align the headings of the table.they can be aligned to centre,left and right.</p> 
+					</td>
+				<td>th <br>
+                {
+    text-align: left;
+}
+  </td>
+                </tr>
+				
+				<tr>
+					<td>5</td>
+					<td><b>Border-spacing</b><br>
+						<p>This property is used to specift the space between the cells. 	</p>				</td>
+				<td>table <br>{
+    border-spacing: 5px;
+}</td>
+                </tr>
+                <tr>
+                <td>6</td>
+                <td><b>Colspan</b>
+                <p>This property is used to make a cell span more than one column </p>
+                </td>
+                <td>
+                &lt th colspan="2" &gt cell content &lt /th &gt </td>
+                </tr>
+                
+                <tr><td>7</td>
+                <td><b>Rowspan</b>
+                <p>This property is used to make a cell span more than one row</p></td>
+   <td>&lt th rowspan="2" &gt /th&gt</td>             
+                
+                </tr>
+                <tr>
+                <td>8</td>
+                <td><b>Caption</b>
+                <p>This property is used to add a caption to the table</p>
+                </td>
+                <td>&lt caption &gt Monthly savings &lt/caption &gt </td>
+                </tr>
+                
+                <tr>
+                <td>9</td>
+                <td><b>Special style</b>
+                <p>This property is used to add special style to the table. The attribute used is id.</p>
+                </td>
+               
+               
+               
+               
+               
+              <td> table#t01 <br> {
+    width: 100%; 
+    background-color:"blue";
+}<br>
+                &lt table li="t01" &gt
+                
+                </td>
+                </tr>
+			</table><br>
+			
+            
+               <h2>Table Heading </h2> 
+               Table heading can be defined using &ltth&gt tag. This tag will be put to replace &lttd&gt tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use &ltth&gt element in any row. Headings, which are defined in &ltth&gt tag are centered and bold by default.
+             
+			<fieldset>
+			<legend>Example</legend><br>
+			<div >
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="blue"> HTML Table Header</font>  <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="blue">Name</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Salary</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &gttr&lt<br>
+            &lttd&gt<font color="blue">No Mercy</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">5000</font>&lttd&gt<br>
+         &lt/tr&gt<br>
+         
+         &gttr&lt<br>
+            &lttd&gt<font color="blue">Pandey</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">7000</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+				
+				&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div >
+				<html>
+
+   <head>
+      <title>HTML Table Header</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>No Mercy</td>
+            <td>5000</td>
+         </tr>
+         
+         <tr>
+            <td>Pandey</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+   
+</html>
+			</div>
+			</fieldset>
+
+<h1><u>Cellpadding and Cellspacing Attributes</u></h1>
+There are two attributes called cellpadding and cellspacing which you will use to adjust the blue space in your table cells. The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.
+<fieldset>
+			<legend>Example</legend><br>
+			<div >
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="blue">HTML Table Cellpadding</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1" cellpadding = "5" cellspacing = "5"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="blue">Name</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Salary</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">No Mercy</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">5000</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Pandey</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">7000></font>s&lt/td&gt<br>
+         &lt/tr&gt<br>				
+		&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div >
+				<html>
+
+   <head>
+      <title>HTML Table Cellpadding</title>
+   </head>
+	
+   <body>
+      <table border = "1" cellpadding = "5" cellspacing = "5">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>No Mercy</td>
+            <td>5000</td>
+         </tr>
+         <tr>
+            <td>Arnab</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+<h1><u>Colspan and Rowspan Attributes</u></h1>
+You will use <b>colspan</b> attribute if you want to merge two or more columns into a single column. Similar way you will use <b>rowspan</b> if you want to merge two or more rows.
+<fieldset>
+			<legend>Example</legend><br>
+			<div >
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="blue"> HTML Table Colspan/Rowspan</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				 &lttable border = "1"&gt<br>
+         &lttr&gt<br>
+                     &ltth&gt<font color="blue">Column 1</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Column 2</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Column 3
+                </font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd rowspan = "2"&gt<font color="blue">Row 1 Cell 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Row 2 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 2 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd colspan = "3"&gt<font color="blue"> 3 Cell 1</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt	<br>			
+		&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div >
+				<html>
+
+   <head>
+      <title>HTML Table Colspan/Rowspan</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+			</div>
+			</fieldset>
+
+
+			<h1><u>Tables Backgrounds</u></h1>
+You can set table background using one of the following two ways −<br>
+<br>
+<b>bgcolor</b> attribute − You can set background color for whole table or just for one cell.<br>
+<br>
+<b>background</b> attribute − You can set background image for whole table or just for one cell.<br>
+<br>
+You can also set border color also using bordercolor attribute.<br>
+<br>
+<fieldset>
+<b>Note:</b>The bgcolor, background, and bordercolor attributes deprecated in HTML5. Do not use these attributes.
+</fieldset>
+<fieldset>
+			<legend>Example</legend><br>
+			<div >
+			<p>
+				
+				&lt html &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="blue">HTML Table Background</font> <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+				&nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+				&lttable border = "1" bordercolor = "green" bgcolor = "yellow"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="blue">Column 1</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Column 2</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue"> Column 3</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd rowspan = "2"&gt<font color="blue">Row 1 Cell 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Row 2 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 2 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd colspan = "3"&gt<font color="blue">Row 3 Cell 1</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt		<br>		 
+		&nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+				&lt /html &gt <br>
+				</fieldset>
+			<fieldset>
+			<legend>Output</legend><br>
+			<div >
+				<html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+  
+   <body>
+      <table border = "1" bordercolor = "green" bgcolor = "yellow">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+  
+</html>
+			</div>
+			</fieldset>
+
+
+
+
+
+      Here is an example of using <b>background</b> attribute. Here we will use an image available in /images directory.
+      <fieldset>
+      <legend>Example</legend><br>
+      <div >
+      <p>
+        
+        &lt html &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <font color="blue">HTML Table Background</font> <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+        &lttable border = "1" bordercolor = "green" background = "C:\Users\KIIT\Desktop\download.jpg"&gt<br>
+         &lttr&gt<br>
+            &ltth&gt<font color="blue">Column 1</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Column 2</font>&lt/th&gt<br>
+            &ltth&gt<font color="blue">Column 3</font>&lt/th&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd rowspan = "2"&gt<font color="blue">Row 1 Cell 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Row 2 Cell 2</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 2 Cell 3</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         &lttr&gt<br>
+            &lttd colspan = "3"&gt<font color="blue">Row 3 Cell 1</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt    <br>     
+    &nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+        &lt /html &gt <br>
+        </fieldset>
+      <fieldset>
+      <legend>Output</legend><br>
+      <div >
+       <html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+  
+   <body>
+      <table border = "1" bordercolor = "green" background = "C:\Users\KIIT\Desktop\download.jpg">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td><td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+  
+</html>
+      </div>
+      </fieldset>
+      <h1><u>Table Height and Width</u></h1>
+You can set a table width and height using <b>width</b> and <b>height</b> attributes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.
+<fieldset>
+      <legend>Example</legend><br>
+      <div >
+      <p>
+        
+        &lt html &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<font color="blue">HTML Table Colspan/Rowspan</font><br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt /title &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt /head &gt <br>
+        &nbsp &nbsp &nbsp &nbsp &lt body &gt <br>
+        
+          &lttable border = "1" width = "400" height = "150"&gt<br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Row 1, Column 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 1, Column 2</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+         <br>
+         &lttr&gt<br>
+            &lttd&gt<font color="blue">Row 2, Column 1</font>&lt/td&gt<br>
+            &lttd&gt<font color="blue">Row 2, Column 2</font>&lt/td&gt<br>
+         &lt/tr&gt<br>
+      &lt/table&gt<br>
+      &nbsp &nbsp &nbsp &nbsp &lt /body &gt <br>
+        &lt /html &gt <br>
+        </fieldset>
+      <fieldset>
+      <legend>Output</legend><br>
+      <div >
+       <html>
+
+   <head>
+      <title>HTML Table Width/Height</title>
+   </head>
+  
+   <body>
+      <table border = "1" width = "400" height = "150">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+   </body>
+           
+  <div id="endtables"></div>
+            <a href=#top><p style="color:bluesmoke; position: absolute; top:5880px; padding-left:30px;" id="pftables">GO BACK TO TOP</p></a> 
+
+        
+    </body>
+</html>

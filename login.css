@@ -1,0 +1,73 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(6UHHE19YG7.jpg);
+	background-size:cover;
+}
+.A
+{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding:40px;
+    background: rgba(00,20,26,.4);
+    box-sizing: border-box;
+    border-radius: 130px;
+}
+.A h3
+{
+	margin: 0  0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;}
+.A .inputA
+{
+	position: relative;
+}
+.A .inputA input
+{
+	width: 100%;
+	padding:10px 0;
+	font-size: 15px;
+	color: #fff;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.A .inputA label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: 2px;
+	padding:10px 0;
+		font-size: 15px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+}
+  .A .inputA input:focus ~ label,
+  .A .inputA input:valid ~ label
+  {
+  	top: -18px;
+  	left: 0;
+  	color: #03A7F6;
+  	font-size: 15px;
+  }
+ .A input[type="SUBMIT"]
+  {
+  	background: transparent;
+  	border: none;
+  	outline: none;
+  	color: #FFF;
+  	background: #03A7F6;
+  	padding: 10px 20px;
+  	border-radius: 55rem;
+  }
