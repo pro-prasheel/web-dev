@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="something.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+</head>
+<body BACKGROUND="a.jpg">
+    <h1><u>HTML Image Syntax</u></h1>
+    <p>In HTML, images are defined with the <span>&lt;img&gt;</span> tag.</p>
+    <p>The <span>&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+    <p>The <span class="attribute">src</span> attribute specifies the URL (web address) of the image:</p>
+    <p><span>&lt;img <span class="attribute">src</span>="url"&gt;</span></p> 
+   
+    
+    <h1><u>The alt Attribute</u></h1>
+    <p>The <span>alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the <span class="attribute">src</span> attribute, or if the user uses a screen reader).The value of the alt attribute should describe the image:</p>
+    <p><b>Example:<b></p>
+    <p> &lt;<span>img</span> <span class="attribute">src</span>="Dog.jpg" <span class="attribute">alt</span>="A dog"&gt;</p>
+   <img src="Dog.jpg" alt="A dog" width="500" hieight="600">
+    <p>If a browser cannot find an image, it will display the value of the alt attribute:</p>
+    <p><b>Example:</b></p>
+    <p>&lt;<span>img</span> <span class="attribute">src</span>="ddog.gif" <span class="attribute">alt</span>="A dog"&gt;</p>
+    <img src="ddog.jpg" alt="A dog"> 
+
+
+    <h1><u>Image Size - Width and Height</u></h1>
+    <p>We can use the <span class="attribute"> style</span> attribute to specify the width and height of an image.</p>
+    <p><b>Example:</b></p>
+    <p>&lt;img src="Kingfisher.jpg" alt="Birds" style="<span class="attribute"> width</span>:600px;<span class="attribute"> height</span>:400px;"&gt;</p>
+    <img src="Kingfisher.jpg" alt="Birds" style="width:600px;height:400px;">
+    <p>Alternatively, we can use the <span class="attributes">width</span> and <span class="attribute">height</span> attributes:</p>
+    <p><b>Example:</b></p>
+    <p>&lt;img src="Kingfisher.jpg" alt="Birds" <span class="attribute">width</span>="600" <span class="attribute">height</span>="400"&gt;</p>
+    <img src="Kingfisher.jpg" alt="Birds" width="600" height="400">
+    <p>The width and height attributes always defines the width and height of the image in <i>pixels</i>.</p>
+    <p><b>Note</b>: Always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.</p>
+    
+    
+    <h1><u>Images in Another Folder</u></h1>
+    <p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+    <p>However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute:</p>
+    <p><b>Example:</b></p>
+    <p>&lt;img src="HTML2\Butterfly.jpg" alt="HTML5 Icon" width="600" height="400"&gt;</p>
+    <img src="HTML2\Butterfly.jpg" alt="HTML5 Icon" width="600" height="400">
+
+    <h1><u>Images on Another Server</u></h1>
+    <p>Some web sites store their images on image servers.</p>
+    <p>Actually, you can access images from any web address in the world:</p>
+    <p><b>Example:</b></p>
+    <p>&lt;img src="https://i.pinimg.com/564x/9e/8b/b8/9e8bb83330de594842a4954002d3c0a1.jpg"&gt;</p>        
+    <p><img src="https://i.pinimg.com/564x/9e/8b/b8/9e8bb83330de594842a4954002d3c0a1.jpg"></p>        
+    
+    
+    <h1><u>Animated Images</u></h1>
+    <p><i>HTML allows animated GIFs:</i></p>
+    <p><b>Example:</b></p>
+    <p>&lt;img src="yo.gif" alt="Meditating Monk" style="width:600px;height:400px;"&gt;</p>
+    <p><img src="yo.gif" alt="Meditating Monk" style="width:600px;height:400px;"></p>
+    
+
+    <h1><u>Background Image</u></h1>
+    <p>To add a background image on an HTML element, use the CSS property background-image:</p>
+    <p><b>Example:</b></p>
+    <p>&lt;body background="a.jpg"&gt;</p>
+    
+</body>    
+</html>        

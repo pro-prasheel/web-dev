@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta title="forms" content="width=device-width, initial-scale=1.0">	
+	<title>Forms</title>
+  <link rel="stylesheet" type="text/css" href="something.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		p{font-size:30px;}
+		body{background: url("background-brick-close-up-1585710.jpg"); margin-left: 18%; color: #ff9900;}
+    h1{font-size: 2.5em;}
+    pre { color: #ff9900; font-size: 1.2em; margin-right: 18%; }
+	</style>
+  
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+</head>
+<body>
+	<h1><u>HTML Forms</u></h1>
+	<p><b>Example</b></p>
+	<form action="/action_page.php" style="font-size: 1.5em;">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <button type="button" class="btn btn-primary">Submit</button>
+</form> 
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<pre style="font-size: 1.2em; color: #ff9900; margin-right: 15%;">The &ltform> Element
+The HTML &ltform> element defines a form that is used to collect user input:
+&ltform>
+.
+form elements
+.
+&lt/form>
+An HTML form contains form elements.
+
+Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+</pre>
+<pre style="font-size: 1.2em; color: #ff9900; margin-right: 15%;">The &ltinput> Element
+The &ltinput> element is the most important form element.
+
+The &ltinput> element can be displayed in several ways, depending on the type attribute.
+
+Here are some examples:</pre>
+<img src="capture.png" width="50%"><br>
+<p style="font-size: 1.2em; margin-right: 15%; color: #ff9900; margin-right: 15%;">Text Input
+&ltinput type="text"> defines a one-line input field for text input:</p>
+<p>Example</p>
+ <form style="font-size: 1.2em; color: #ff9900; margin-right: 15%;">
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+<h3>Radio Button Input</h3>
+<pre>
+&ltinput type="radio"> defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices:
+Example
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form></pre>
+<h3>The Submit Button</h3>
+<pre>&ltinput type="submit"> defines a button for submitting the form data to a form-handler.
+
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+
+<b>Example</b>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form></pre>
+<h3>The Action Attribute</h3>	
+<pre>The action attribute defines the action to be performed when the form is submitted.
+
+Normally, the form data is sent to a web page on the server when the user clicks on the submit button.
+
+In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:
+
+&ltform action="/action_page.php">
+If the action attribute is omitted, the action is set to the current page.
+</pre>
+<h3>The Target Attribute</h3>
+<pre>The target attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+
+The default value is "_self" which means the form will be submitted in the current window.
+
+To make the form result open in a new browser tab, use the value "_blank":
+
+<b>Example</b>
+&ltform action="/action_page.php" target="_blank">
+</pre>
+<b><u>The <i>Method</i> Attribute</u></b>
+<pre style="font-size: 1.2em; color: #ff9900; margin-right: 15%;">The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:
+
+<b>Example</b>
+&ltform action="/action_page.php" method="get"></pre>
+<h3><u>When to Use GET?</u></h3>
+<pre style="font-size: 1.2em; color: #ff9900; margin-right: 15%;">
+The default method when submitting form data is GET.
+
+However, when GET is used, the submitted form data will be visible in the page address field:
+
+/action_page.php?firstname=Mickey&lastname=Mouse</pre>
+<b><u>Notes on GET:</u></b>
+<ul>
+	<li>Appends form-data into the URL in name/value pairs.</li>
+	<li>The length of a URL is limited (about 3000 characters)</li>
+<li>Never use GET to send sensitive data! (will be visible in the URL)</li>
+<li>Useful for form submissions where a user wants to bookmark the result</li>
+<li>GET is better for non-secure data, like query strings in Google</li>
+</ul>
+<h3><u>When to Use <i>POST</i>?</u></h3>
+<p>Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.</p>
+<b><u><span style="font-size: 1.3em;">Notes on <i>POST</i>:</span></u></b>
+<ul>
+	<li>POST has no size limitations, and can be used to send large amounts of data.
+ 	</li>
+ 	<li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>color</title>
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Croissant One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+</head>
+<body>
+     <h1 class="heading"><font color="maroon" size="7">  COLOR TAG :  </font> </h1>
+     <div class="pa">
+Colors are very important to give a good look and feel to your website. You can specify colors on page level using <body>&lt;body&gt; tag or you can set colors for individual tags using bgcolor attribute.
+
+The <body>&lt;body&gt; tag has following attributes which can be used to set different colors :
+<dl type="square">
+<dt class = "a">bgcolor -</dt> <dd> sets a color for the background of the page.</dd>
+
+<dt class = "a">text -</dt> <dd>sets a color for the body text.</dd>
+
+<dt class = "a">alink -</dt> <dd>sets a color for active links or selected links.</dd>
+</dl>
+<dt class = "a">link -</dt> <dd>sets a color for linked text. </dd>
+
+ <dt class = "a">vlink -</dt> <dd>sets a color for visited links : that is, for linked text that you have already clicked on.    </dd>	
+  
+     </div>
+    
+    <h2 class="heading"><font color="maroon" size="5">  HTML Color Coding Methods :  </font> </h2>
+     <div class="pa">
+There are following three different methods to set colors in your web page :
+
+<dl type="square">
+<dt class = "a"> Color names -</dt> <dd> You can specify color names directly like green, blue or red. </dd>
+
+<dt  class = "a"> Hex codes -</dt> <dd> A six-digit code representing the amount of red, green, and blue that makes up the color.  </dd>
+
+<dt  class = "a"> Color decimal or percentage values -</dt> <dd> This value is specified using the rgb( ) property. </dd>
+ 
+  
+     </div>
+
+</dl> </div>
+
+<h3 class="heading"><font color="maroon" size="5">  HTML Colors - Color Names:   </font> </h3>
+     <div class="pa" >
+You can specify direct a color name to set text or background color. HTML has listed 16 basic color names that will validate with an HTML validator but there are over 200 different color names supported by major browsers.
+
+</div>
+<br>
+<br>
+    <h1> <font color="black" > HTML STANDARD 16 COLORS </font> </h1>
+    <table class="t">
+    <tr>
+      <td bgcolor="red">&nbsp;  </td>
+      <td>&nbsp;  red</td> 
+      <td bgcolor="yellow">&nbsp; </td>
+      <td>&nbsp; yellow</td>
+      <td bgcolor="black">&nbsp;  </td>
+      <td>&nbsp; black </td> 
+      <td bgcolor="maroon">&nbsp; </td>
+      <td>&nbsp; maroon</td>
+    </tr>  
+   <tr>
+      <td bgcolor="gray">&nbsp;  </td>
+      <td>&nbsp;  gray</td> 
+      <td bgcolor="lime">&nbsp; </td>
+      <td>&nbsp; lime</td>
+      <td bgcolor="green">&nbsp;  </td>
+      <td>&nbsp;  green</td> 
+      <td bgcolor="olive">&nbsp; </td>
+      <td>&nbsp; olive</td>
+    </tr> 
+    <tr>
+      <td bgcolor="silver">&nbsp;  </td>
+      <td>&nbsp;  silver</td> 
+      <td bgcolor="aqua">&nbsp; </td>
+      <td>&nbsp; aqua</td>
+      <td bgcolor="blue">&nbsp;  </td>
+      <td>&nbsp;  blue</td> 
+      <td bgcolor="navy">&nbsp; </td>
+      <td>&nbsp; navy</td>
+    </tr> 
+    <tr>
+      <td bgcolor="white">&nbsp;  </td>
+      <td>&nbsp;  white</td> 
+      <td bgcolor="fushsia">&nbsp; </td>
+      <td>&nbsp; fushsia</td>
+      <td bgcolor="purple">&nbsp;  </td>
+      <td>&nbsp;  purple</td> 
+      <td bgcolor="teal">&nbsp; </td>
+      <td>&nbsp; teal</td>
+    </tr> 
+
+
+    </table>	
+    <h3>Example</h3>
+<p>Here are the examples to set background of an HTML tag by color name &minus;</p>
+<div class="exa">
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;HTML Colors by Name&lt;/title&gt;
+   &lt;/head&gt;
+  
+   &lt;body text = "blue" bgcolor = "green"&gt;
+      &lt;p&gt;Use different color names for for body and table and see the result.&lt;/p&gt;
+      
+      &lt;table bgcolor = "black"&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               &lt;font color = "white"&gt;This text will appear white on black background.&lt;/font&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+   
+&lt;/html&gt;
+</pre>
+</div>
+     
+     
+<h2>HTML Colors - RGB Values</h2>
+<p>This color value is specified using the <b>rgb( )</b> property. This property takes three values, one each for red, green, and blue. The value can be an integer between 0 and 255 or a percentage.</p>
+<blockquote><p><b>Note</b> &minus;  All the browsers does not support rgb() property of color so it is recommended not to use it.</p></blockquote>
+<p>Following is a list to show few colors using RGB values.</p>
+<table class="table table-bordered">
+<tr>
+<th width="50%">Color</th>
+<th width="50%">Color RGB</th>
+</tr>
+<tr>
+<td bgcolor="#000000">&nbsp;</td>
+<td>rgb(0,0,0)</td>
+</tr>
+<tr>
+<td bgcolor="#ff0000">&nbsp;</td>
+<td>rgb(255,0,0)</td>
+</tr>
+<tr>
+<td bgcolor="#00ff00">&nbsp;</td>
+<td>rgb(0,255,0)</td>
+</tr>
+<tr>
+<td bgcolor="#0000ff">&nbsp;</td>
+<td>rgb(0,0,255)</td>
+</tr>
+<tr>
+<td bgcolor="#ffff00">&nbsp;</td>
+<td>rgb(255,255,0)</td>
+</tr>
+<tr>
+<td bgcolor="#00ffff">&nbsp;</td>
+<td>rgb(0,255,255)</td>
+</tr>
+<tr>
+<td bgcolor="#ff00ff">&nbsp;</td>
+<td>rgb(255,0,255)</td>
+</tr>
+<tr>
+<td bgcolor="#c0c0c0">&nbsp;</td>
+<td>rgb(192,192,192)</td>
+</tr>
+<tr>
+<td bgcolor="#ffffff">&nbsp;</td>
+<td>rgb(255,255,255)</td>
+</tr>
+</table>
+
+</body>
+</html>
+<style type="text/css">
+
+body{
+  background-color:#FFF9FB; 
+
+
+}
+
+.pa{
+  color:black;
+  margin-left: 10%;
+ font-family: 'IBM Plex Sans';
+  font-size:20px;
+}
+
+.ap{
+color:orange;
+  margin-left: 10%;
+  font-family: "Audiowide" ;
+  font-size:30px;
+
+}
+
+.ex{
+ border:dashed;
+ border-color: green;
+ border-width: 2px;
+ 
+
+
+}
+.aap{
+   color:orange;
+margin-left: 10%;
+  font-family: "Audiowide" ;
+  font-size:30px;
+}
+.t{
+    padding: 10px;
+    width:80%;
+    color:black;
+}
+.exa{
+margin-left: 5%;
+ /*border:solid;*/
+ background-color: #DDA0DD;
+ /*border-color: green;*/
+ border-width: 2px;
+ color:black;
+ width:90%;
+ /*height:200px;*/
+ /*text-align: center;*/
+ padding-top:5px;
+ padding-bottom:10px;
+padding-left: 10px;
+
+
+}
+.heading{
+  font-family: 'Croissant One';
+ }
+.a{
+  color: darkgreen;
+  font-weight: bold;
+}
+</style>
