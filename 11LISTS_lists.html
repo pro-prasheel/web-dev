@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML Lists</title>
+    <link rel="stylesheet" type="text/css" href="something.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body BACKGROUND="intro_image.jpg" >
+    <h1>HTML Lists</h1>
+    <hr width=100% size="2" no shade align="center">
+    <p>List is a collection of one or more items.</p><br/>
+    <h2>Unordered Lists</h2>
+    <p >An unordered list is a collection of related items that have no special order or sequence.
+        An unordered list starts with the <b>&lt;ul&gt;</b> tag. Each list item starts with the <b>&lt;li&gt;</b> tag.
+    The list items will be marked with bullets<b>/</b> disc (small black circles) by default.</p><br/>
+    <h3><b><u><font color="005580">Example:</font></u></b></h3>
+  <p> &lt;ul&gt;<br/>
+  &lt;li&gt;Ginger&lt;/li&gt;<br/>
+  &lt;li&gt;Garlic&lt;/li&gt;<br/>
+  &lt;li&gt;Lemon&lt;/li&gt;<br/>
+    &lt;/ul&gt;</p>
+    <a href="11LISTS_a1.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a><br/>
+    
+    <h2>Unordered HTML List - Choose List Item Marker</h2>
+    The CSS <span style="color:red">list-style-type</span> property is used to define the style of the list item marker:
+    <table>
+        <tr bgcolor="#e6e6e6">
+    <th>VALUE</th>
+            <th>DESCRIPTION</th></tr>
+        <tr><td>disc</td>
+        <td>Sets the list item marker to a bullet (default)</td></tr>
+        <tr bgcolor="#e6e6e6"><td>circle</td>
+        <td>Sets the list item marker to a circle</td></tr>
+        <tr ><td>square</td>
+        <td>Sets the list item marker to a square</td></tr>
+        <tr bgcolor="#e6e6e6"><td>none</td>
+        <td>The list items will not be marked</td></tr>
+    </table>
+    <h3 ><b><u><font color="005580">Example - Circle</font></u></b></h3>
+        &lt;ul style="list-style-type:circle"&gt;<br/>
+  &lt;li&gt;Beetroot&lt;/li&gt;<br/>
+  &lt;li&gt;Ginger&lt;/li&gt;<br/>
+  &lt;li&gt;Potato&lt;/li&gt;<br/>
+      &lt;li&gt;Radish&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+    <a href="11LISTS_a2.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a><br/>
+    
+    <h3 ><b><u><font color="005580">Example - Square</font></u></b></h3>
+        &lt;ul style="list-style-type:square"&gt;<br/>
+  &lt;li&gt;Beetroot&lt;/li&gt;<br/>
+  &lt;li&gt;Ginger&lt;/li&gt;<br/>
+  &lt;li&gt;Potato&lt;/li&gt;<br/>
+      &lt;li&gt;Radish&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+    <a href="11LISTS_a3.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a><br/>
+    
+        <h3 ><b><u><font color="005580">Example - None</font></u></b></h3>
+        &lt;ul style="list-style-type:none"&gt;<br/>
+  &lt;li&gt;Beetroot&lt;/li&gt;<br/>
+  &lt;li&gt;Ginger&lt;/li&gt;<br/>
+  &lt;li&gt;Potato&lt;/li&gt;<br/>
+      &lt;li&gt;Radish&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+    <a href="11LISTS_a4.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a>
+    <hr width=100% size="1" no shade align="center"><br/><br/>
+    <h2>Ordered Lists</h2>
+    <p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used.
+   An ordered list starts with the &lt;ol&gt; tag.
+    The list items will be marked with numbers by default.</p><br/>
+    <h3><b><u><font color="005580">Example:</font></u></b></h3>
+    &lt;ol&gt;<br/>
+  &lt;li&gt;Coffee&lt;/li&gt;<br/>
+  &lt;li&gt;Tea&lt;/li&gt;<br/>
+  &lt;li&gt;Milk&lt;/li&gt;<br/>
+&lt;/ol&gt;<br/>
+    <a href="11LISTS_a5.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a><br/>
+    <h2>Ordered HTML List - The Type Attribute</h2>
+    <p>The <span style="color:red">type</span> attribute of the <span style="color:red">&lt;ol&gt;</span> tag, defines the type of the list item marker:</p>
+    <table>
+        <tr><th>TYPE</th>
+        <th>DESCRIPTION</th></tr>
+        <tr bgcolor="#e6e6e6">
+        <td>type="1"</td>
+        <td>The list items will be numbered with numbers (default)</td></tr>
+        <tr><td>type="A","a"</td>
+        <td>The list items will be numbered with uppercase/lowercase letters</td></tr>
+        <tr bgcolor="#e6e6e6"><td>type="I","i"</td>
+        <td>The list items will be numbered with uppercase/lowercase roman numbers</td></tr>
+  </table>
+    <h4><u><font color="005580">Uppercase Letters:</font></u></h4>
+&lt;ol type="A"&gt;<br/>
+  &lt;li&gt;Coffee&lt;/li&gt;<br/>
+  &lt;li&gt;Tea&lt;/li&gt;<br/>
+  &lt;li&gt;Milk&lt;/li&gt;<br/>
+&lt;/ol&gt;<br/>
+    <h4><u><font color="005580">Lowercase Letters:</font></u></h4>
+&lt;ol type="a"&gt;<br/>
+  &lt;li&gt;Coffee&lt;/li&gt;<br/>
+  &lt;li&gt;Tea&lt;/li&gt;<br/>
+  &lt;li&gt;Milk&lt;/li&gt;<br/>
+&lt;/ol&gt;<br/>
+   <h4><u><font color="005580">Uppercase Roman Numbers:</font></u></h4>
+&lt;ol type="I"&gt;<br/>
+  &lt;li&gt;Coffee&lt;/li&gt;<br/>
+  &lt;li&gt;Tea&lt;/li&gt;<br/>
+  &lt;li&gt;Milk&lt;/li&gt;<br/>
+&lt;/ol&gt;<br/>
+    <h4><u><font color="005580">Lowercase Roman Numbers:</font></u></h4>
+&lt;ol type="i"&gt;<br/>
+  &lt;li&gt;Coffee&lt;/li&gt;<br/>
+  &lt;li&gt;Tea&lt;/li&gt;<br/>
+  &lt;li&gt;Milk&lt;/li&gt;<br/>
+&lt;/ol&gt;<br/><br/><br/>
+<b>Examples of Ordered List:  </b><a href="11LISTS_a6.html" target="_blank"><button type="button" class="btn btn-primary">View</button></a><br/>
+    <hr width=100% size="1" no shade align="center">
+    <h2>The start attribute </h2>
+    <p>You can use start attribute for <b>&lt;ol&gt;</b> tag to specify the starting point of numbering you need. Following are the possible options −</p>
+    <p>&lt;ol type = "1" start = "4"&gt;    - Numerals starts with 4.</p>
+   <p> &lt;ol type = "I" start = "4"&gt;    - Numerals starts with IV.</p>
+    <p>&lt;ol type = "i" start = "4"&gt;    - Numerals starts with iv.</p>
+   <p>&lt;ol type = "a" start = "4"&gt;    - Letters starts with d.</p>
+   <p>&lt;ol type = "A" start = "4"&gt;    - Letters starts with D.</p><br/>
+    <b><u><font color="005580">Example:</font></u></b>
+    <p>Following is an example where we used &lt;ol type = "i" start = "4" &gt;</p>
+     &lt;ol type = "i" start = "4"&gt;<br/>
+         &lt;li&gt;Beetroot&lt;/li&gt;<br/>
+         &lt;li&gt;Ginger&lt;/li&gt;<br/>
+         &lt;li&gt;Potato&lt;/li&gt;<br/>
+         &lt;li&gt;Radish&lt;/li&gt;<br/>
+      &lt;/ol&gt;<br/>
+    <a href="11LISTS_a7.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a><br/>
+    <hr width=100% size="1" no shade align="center">
+    <h2>Nested HTML Lists</h2>
+    Nested lists may be used to display sub-elements of an item.<br/>
+    <h3><b><u><font color="005580">Example:</font></u></b></h3>
+    &lt;h4&gt;Courses:-&lt;/h4&gt;<br/> 
+    &lt;ul type="square"&gt;<br/>
+    &lt;li&gt;B.Tech&lt;/li&gt;<br/>
+    &lt;ul type="circle"&gt;<br/>
+        &lt;li&gt;C.S.&lt;/li&gt;<br/>
+        &lt;li&gt;I.T.&lt;/li&gt;<br/>
+        &lt;/ul&gt;<br/>
+    &lt;li&gt;M.Tech&lt;/li&gt;<br/>
+        &lt;ol type="i"&gt;<br/>
+            &lt;li&gt;DA&lt;/li&gt;<br/>
+            &lt;li&gt;SE&lt;/li&gt;<br/>
+        &lt;/ol&gt;<br/>
+    &lt;/ul&gt;<br/>
+    <a href="11LISTS_a8.html" target="_blank"><button type="button" class="btn btn-primary">Try it>></button></a><br/>
+    <hr width=100% size="3" no shade align="center">
+    </body>
+</html>

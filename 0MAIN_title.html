@@ -1,0 +1,71 @@
+<html>
+<head>
+	<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="a.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+<style type="text/css">
+   body
+{
+
+	.title
+{
+	font-family: 'Lato', sans-serif;
+	text-transform: lowercase;
+	display: block;
+	text-decoration: none;
+	color: #009688;
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	transition: .3s; 
+}
+.title:before
+{
+	content: '';
+	width: 100X;
+	height: 100X;
+	position: absolute;
+	background: #009688;
+	opacity: .5;
+	top: -100X;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+}
+.title:after
+{
+	content: '';
+	
+	position: absolute;
+	background: #009688;
+	top: -100X;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+	transition-delay: .2s;
+}
+.title:hover
+{
+	color:#40FF00;
+}
+.title:hover:before
+{
+	top= 0;
+}
+.title:hover:after
+{
+	top= 0;
+}
+h1{	 text-align: center;
+	animation-name: animate;
+}
+
+@keyframe animate{}
+	
+	</style>
+</head>
+<body background="blank-board-empty-1050308.jpg">
+<h1 class="A" style="color:#00FC90;text-align:center;font-family:'Lato', sans-serif;" > <a href="0MAIN_default_frame2.html" target="details" class="title">CS-5   GROUP1   TUTORIAL</a></h1>
+</body>
+</html>

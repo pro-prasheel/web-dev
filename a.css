@@ -1,0 +1,62 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+@keyframes moveright {
+  0%{opacity: -0.5; transform:tranaslateX(0rem);}
+  10%{opacity: -0.2; transform:tranaslateX(0rem);}
+  20% {opacity:0.0;
+    
+    transform: translateX(-10rem); }
+    30%{opacity: 0.002; transform:tranaslateX(5rem);}
+  40%{
+    opacity:0.09;
+    transform: translateX(10rem);
+  }
+  50%{opacity: 0.2; transform:tranaslateX(0rem);}
+  60% {opacity:0.6;
+    transform: translateX(-10rem); }
+  80%{opacity:0.8;
+    transform:tranaslateX(10rem);
+  }
+  
+  100%{opacity:1;
+    transform:tranaslateX(0rem);
+  }
+}
+
+.A
+{
+  word-spacing: 0.85cm;
+	padding: 0.4%;
+	color: #DEF;
+	font-size: 42px;
+	/*margin: 20%;*/
+	text-align: center;
+	  font-size: 52px;
+  
+  transition:translate;
+  animation-name: moveright;
+  animation-duration: 3s;
+}
+
+.title:hover{
+  color: red;
+}
+.B
+{
+	padding: 0;
+	word-spacing: 2.8cm;
+  text-align: center;
+}
+.Q
+{
+  margin: 10%;
+}
+.T
+{
+  padding: 2%;
+  text-align: center;
+  font-size: 54px;
+}

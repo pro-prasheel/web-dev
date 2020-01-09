@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<title>adver2</title>
+<style>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+	.title
+{
+	font-family: 'Lato', sans-serif;
+	text-transform: lowercase;
+	display: block;
+	text-decoration: none;
+	color: red;
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	transition: .3s; 
+}
+.title:before
+{
+	content: '';
+	width: 100X;
+	height: 100X;
+	position: absolute;
+	background: white;
+	opacity: .5;
+	top: -100X;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+}
+.title:after
+{
+	content: '';
+	
+	position: absolute;
+	background: white;
+	top: -100X;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+	transition-delay: .2s;
+}
+.title:hover
+{
+	color:white;
+}
+.title:hover:before
+{
+	top= 0;
+}
+.title:hover:after
+{
+	top= 0;
+}
+.rounded
+{
+width:230px;
+height:230px;
+border-radius: 50%;
+
+}
+	
+	</style>
+</head>
+<body background= "BG4ytryjuh.JPG" >
+<marquee direction="down">
+
+<img class="rounded" src="download.jpg" >
+<img class="rounded" src="images (3).jpg" >
+<img class="rounded" src="images.png" >
+<img class="rounded" src="images (1).jpg" >
+<img class="rounded" src="images (2).jpg" >
+
+
+
+
+</marquee>
+</body>
+</html>
